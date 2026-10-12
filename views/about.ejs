@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+<h1>О нас</h1>
+<p>«Полярная» работает с 2014 года. Проводим наблюдения и короткие экскурсии.</p>
+<ul>
+  <% programs.forEach(({ title, text }) => { %>
+    <li>
+      <strong><%= title %></strong>
+      <p><%= text %></p>
+    </li>
+  <% }) %>
+</ul>
+<%- include('partials/footer') %>

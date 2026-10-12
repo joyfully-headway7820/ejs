@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+header {
+  background: #333;
+  padding: 12px 20px;
+}
+
+header a {
+  color: #fff;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+header a.is-active {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  padding: 12px 20px;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.notice {
+  padding: 10px;
+  background: #e5f6e8;
+  color: #146c2e;
+}
+
+.animate-btn {
+  padding: 10px 16px;
+  color: #fff;
+  background: #3a7bd5;
+  border: none;
+  cursor: pointer;
+  animation: fade-in 0.8s ease;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.animate-btn:hover {
+  background: #245ba8;
+  transform: scale(1.08);
+}
+
+.animate-btn:active {
+  transform: scale(0.95);
+}
+
+.animate-btn[data-state="booked"] {
+  background: #1f7a3a;
+}
+
+button {
+  padding: 8px 12px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

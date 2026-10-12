@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+<h1>Контакты</h1>
+<p>Урочище Каменный мыс, площадка 2. Телефон: +7 (818) 000-00-00.</p>
+<% if (success) { %>
+  <p class="notice">Сообщение отправлено. Ответим на указанную почту.</p>
+<% } %>
+<form action="/contact" method="post">
+  <label>
+    Имя
+    <input type="text" name="name" required>
+  </label>
+  <label>
+    Электронная почта
+    <input type="email" name="email" required>
+  </label>
+  <label>
+    Сообщение
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+  <button type="submit">Отправить</button>
+</form>
+<%- include('partials/footer') %>
